@@ -3,6 +3,7 @@ package com.example.bttracker;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,18 +15,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void goToLogActivity(View view) {
+    public void goToLog(View view) {
       Intent toLog = new Intent(this,LogActivity.class);
       startActivity(toLog);
     }
 
-    public void goToNormalActivity(View view) {
+    public void goToNormal(View view) {
         Intent i1=new Intent(this,NormalActivity.class);
         startActivity(i1);
     }
 
     public void goToMechanism(View view) {
-        Intent i2 = new Intent(this,MechanismActivity.class);
+        Intent i2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.scientificamerican.com/article/what-causes-a-fever/"));
         startActivity(i2);
     }
 }
