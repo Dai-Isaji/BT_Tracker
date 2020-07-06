@@ -128,6 +128,7 @@
             android:background="#4D00BCD4"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
+            android:onClick="openHandleFeverLink"
             android:text="Hnading Fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
