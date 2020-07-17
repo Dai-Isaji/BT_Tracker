@@ -87,7 +87,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
             android:onClick="goToNormal"
-            android:text="Check Normal Range"
+            android:text="@string/check_normal_range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -108,7 +108,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
             android:onClick="goToMechanism"
-            android:text="Mechanism of Fever"
+            android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -129,7 +129,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
             android:onClick="openHandleFeverLink"
-            android:text="Hnading Fever"
+            android:text="@string/hnadingfever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
     </LinearLayout>
