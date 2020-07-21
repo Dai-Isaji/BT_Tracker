@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".NormalActivity">
 
     <TextView
@@ -17,14 +18,47 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.132" />
 
     <ScrollView
-        android:id="@+id/normalTextScrol"
-        android:layout_width="405dp"
-        android:layout_height="408dp"
+        android:id="@+id/normalTextScroll"
+        android:layout_width="408dp"
+        android:layout_height="428dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/normalTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/normalTitle"
+        app:layout_constraintVertical_bias="0.177">
+
+        <TextView
+            android:id="@+id/normalLongText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:shadowColor="#FDFAFA"
+            android:text="@string/normalRangeText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#7B93A7"
+            android:textColorHint="#FFFFFF">
+
+        </TextView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/BACKTOHOME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CCE3ED"
+        android:shadowColor="#F8F4F4"
+        android:text="BACK TO HOME"
+        android:onClick="normalToHome"
+        android:textColor="#00BCD4"
+        android:textColorHint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalTextScroll" />
 </androidx.constraintlayout.widget.ConstraintLayout>
