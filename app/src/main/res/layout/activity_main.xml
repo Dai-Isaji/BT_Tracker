@@ -46,24 +46,23 @@
         android:layout_width="0dp"
         android:layout_height="297dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="8dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/MainButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#00BCD4"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
-            android:onClick="goToLog"
             android:text="@string/log_body_temperature"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
@@ -79,14 +78,13 @@
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/MainButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#AD00BCD4"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
-            android:onClick="goToNormal"
             android:text="@string/check_normal_range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
@@ -100,14 +98,13 @@
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/MainButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#6B00BCD4"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
-            android:onClick="goToMechanism"
             android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
@@ -121,14 +118,13 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/MainButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#4D00BCD4"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
-            android:onClick="openHandleFeverLink"
             android:text="@string/hnadingfever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
