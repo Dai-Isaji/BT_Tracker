@@ -45,9 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.MainButton3:
                 //If MainButton is clicked, do something
-                Intent toMechanism=new Intent(this, MechanismActivity.class);
-                startActivity(toMechanism);
-                break;
+                Intent openMechanismLink=new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.scientificamerican.com/article/what-causes-a-fever/"));
             case R.id.MainButton4:
                 //If MainButton is clicked, do something
                 Intent openFeverLink=new Intent(Intent.ACTION_VIEW,
